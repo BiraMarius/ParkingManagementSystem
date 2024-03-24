@@ -12,6 +12,7 @@ public class CarRepository {
 
     public void addCar(Car car){
         String sql = "INSERT INTO car VALUES (NULL, ?)";
+        String sql2 = "INSERT INTO car VALUES (NULL, test)";
         jdbcTemplate.update(sql, car.getRegistrationNumber());
     }
 
